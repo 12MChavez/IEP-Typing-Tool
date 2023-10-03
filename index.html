@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>IEP Typing Tool</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-fluid">
-        <h1>My First Bootstrap Page</h1>
-        <p>This is some text.</p>
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>
+            <strong>Teachers:</strong> What is the student learning to type?
+            (Student's name? Student's username?)
+          </h4>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="goalWord" />
+        </div>
       </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <h4><strong>Teachers:</strong> Enter number of trials</h4>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="trialNum" />
+        </div>
+      </div>
+      <label class="checkbox-inline"
+        ><input type="checkbox" value="" />Visual Prompts?</label
+      >
+      <label class="checkbox-inline"
+        ><input type="checkbox" value="" />Practice Mode?</label
+      >
+      <button type="button" class="btn btn-success">Start</button>
+    </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
